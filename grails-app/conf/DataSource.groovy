@@ -18,6 +18,7 @@ environments {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
             configClass = org.grails.plugin.hibernate.filter.HibernateFilterDomainConfiguration
+            loggingSql = true
         }
     }
     test {
